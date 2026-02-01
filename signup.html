@@ -1,14 +1,38 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>will you be my valentine?</title>
+<title>🎉 Sign Up</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body class="center">
-<h1>jahanvi will you be my valentine?</h1>
-  <h1>YAY! 🎉</h1>
+
+<h1>Welcome to Hub 🎉</h1>
+<p>Your account is almost ready</p>
+
 <input placeholder="Email">
 <input placeholder="Password" type="password">
 <button class="primary">Create Account</button>
+
+<canvas id="confetti"></canvas>
+
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+
+<script>
+  const duration = 3 * 1000;
+  const end = Date.now() + duration;
+
+  (function frame() {
+    confetti({
+      particleCount: 7,
+      spread: 100,
+      origin: { y: 0.6 }
+    });
+
+    if (Date.now() < end) {
+      requestAnimationFrame(frame);
+    }
+  })();
+</script>
+
 </body>
 </html>
