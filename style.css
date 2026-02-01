@@ -127,3 +127,27 @@ p {
 #orbitBtn {
   position: absolute;
 }
+
+/* Button container */
+#btnGroup {
+  position: relative;
+  width: 520px;
+  height: 260px;
+  margin-top: 40px;
+}
+
+/* Center main button */
+#mainBtn {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Orbiting button */
+#orbitBtn {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
