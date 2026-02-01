@@ -8,44 +8,25 @@ window.addEventListener("scroll",()=>{
   })
 })
 
-const button = document.getElementById("runaway");
+const main = document.getElementById("mainBtn");
+const orbit = document.getElementById("orbitBtn");
 
-document.addEventListener("mousemove", (e) => {
-  const rect = button.getBoundingClientRect();
+let angle = 0;
 
-  const mouseX = e.clientX;
-  const mouseY = e.clientY;
+function orbitMove() {
+  const radius = 120;
 
-  const btnX = rect.left + rect.width / 2;
-  const btnY = rect.top + rect.height / 2;
+  const centerX = main.offsetLeft + main.offsetWidth / 2;
+  const centerY = main.offsetTop + main.offsetHeight / 2;
 
-  const distance = Math.hypot(mouseX - btnX, mouseY - btnY);
+  const x = centerX + radius * Math.cos(angle);
+  const y = centerY + radius * Math.sin(angle);
 
-  if (distance < 120) {
-    const moveX = (btnX - mouseX) * 2;
-    const moveY = (btnY - mouseY) * 2;
+  orbit.style.left = x - orbit.offsetWidth / 2 + "px";
+  orbit.style.top = y - orbit.offsetHeight / 2 + "px";
 
-    let newX = rect.left + moveX;
-    let newY = rect.top + moveY;
+  angle += 0.03;
+  requestAnimationFrame(orbitMove);
+}
 
-    const maxX = window.innerWidth - rect.width;
-    const maxY = window.innerHeight - rect.height;
-
-    newX = Math.max(0, Math.min(maxX, newX));
-    newY = Math.max(0, Math.min(maxY, newY));
-
-    button.style.left = `${newX}px`;
-    button.style.top = `${newY}px`;
-  }
-});
-
-const runBtn = document.getElementById("runBtn");
-
-runBtn.addEventListener("mouseover", () => {
-  const x = Math.random() * (window.innerWidth - runBtn.offsetWidth);
-  const y = Math.random() * (window.innerHeight - runBtn.offsetHeight);
-
-  runBtn.style.position = "absolute";
-  runBtn.style.left = x + "px";
-  runBtn.style.top = y + "px";
-});
+orbitMove();
