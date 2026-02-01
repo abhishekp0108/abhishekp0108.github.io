@@ -121,3 +121,17 @@ input {
   border: none;
   margin-top: 20px;
 }
+.btn {
+  padding: 14px 28px;
+  border-radius: 8px;
+  text-decoration: none;
+  display: inline-block;
+  margin: 10px;
+}
+.center {
+  min-height:100vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+}
