@@ -151,3 +151,10 @@ p {
   top: 50%;
   transform: translate(-50%, -50%);
 }
+
+#orbitBtn {
+  position: absolute;
+  left: calc(50% + 160px);   /* start to the right */
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
