@@ -1,3 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial;
+}
+
+/* Valentine Background */
+body {
+  min-height: 100vh;
+  background: radial-gradient(circle at top, #ffd1dc, #ffb6c1, #ff8fab);
+  color: #4a0033;
+  overflow-x: hidden;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 80px;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+  background: rgba(255, 182, 193, 0.4);
+  backdrop-filter: blur(10px);
+}
+
+/* Hero */
+.hero {
+  min-height: 100vh;
+  padding-top: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* Glow */
+.glow {
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, #ff6fa5, transparent);
+  filter: blur(120px);
+  z-index: -1;
+}
+
+/* Headings */
+h1 {
+  font-size: 64px;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+
 .btn {
   padding: 16px 40px;
   border-radius: 50px;
