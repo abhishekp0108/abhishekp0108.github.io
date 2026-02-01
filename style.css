@@ -166,3 +166,10 @@ p {
   justify-content: center;
   align-items: center;
 }
+
+.btn-note {
+  font-size: 14px;
+  margin-top: 12px;
+  color: #7a003c;
+  opacity: 0.8;
+}
