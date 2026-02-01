@@ -68,7 +68,8 @@ button {
 }
 
 .primary {
-  background: linear-gradient(45deg,#4f46e5,#7c3aed);
+  .primary {
+  background: linear-gradient(45deg, #ff5c8a, #ff2f6f);
   color: white;
 }
 
