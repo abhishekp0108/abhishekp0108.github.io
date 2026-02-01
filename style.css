@@ -136,3 +136,23 @@ input {
   justify-content:center;
   align-items:center;
 }
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #0f172a;
+}
+
+#runaway {
+  position: absolute;
+  padding: 15px 40px;
+  font-size: 22px;
+  border: none;
+  border-radius: 12px;
+  background: linear-gradient(45deg, #ff4d4d, #ff0000);
+  color: white;
+  cursor: pointer;
+  transition: 0.15s ease;
+  box-shadow: 0 0 20px red;
+}
