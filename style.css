@@ -141,3 +141,45 @@ input {
   justify-content:center;
   align-items:center;
 }
+.btn {
+  padding: 16px 40px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  display: inline-block;
+  transition: 0.3s ease;
+}
+
+/* DARK PRIMARY */
+.primary {
+  background: linear-gradient(45deg, #7a003c, #4a001f);
+  color: #ffd6e5;
+  box-shadow: 0 0 20px rgba(255,80,130,.5);
+}
+
+/* LIGHT SECONDARY */
+.secondary {
+  background: #ffd6e5;
+  color: #7a003c;
+  box-shadow: 0 0 10px rgba(255,100,160,.4);
+}
+
+/* Primary grows on hover */
+.primary:hover {
+  transform: scale(1.2);
+}
+
+/* "Don't touch me" animation */
+.no-touch {
+  position: relative;
+}
+
+.no-touch:hover {
+  animation: dodge 0.3s infinite alternate;
+}
+
+@keyframes dodge {
+  from { transform: translateX(0); }
+  to { transform: translateX(30px); }
+}
