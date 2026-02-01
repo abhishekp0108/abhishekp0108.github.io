@@ -1,0 +1,37 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  height: 100vh;
+  background: linear-gradient(135deg, #ff9a9e, #fad0c4, #fbc2eb);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  text-align: center;
+}
+
+.profile {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.link-btn {
+  display: block;
+  background: white;
+  color: black;
+  padding: 15px;
+  margin: 12px auto;
+  width: 260px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.link-btn:hover {
+  background: black;
+  color: white;
+}
