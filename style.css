@@ -111,3 +111,19 @@ p {
   gap: 15px;
 }
 
+#btnGroup {
+  position: relative;
+  width: 400px;
+  height: 200px;
+}
+
+#mainBtn {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#orbitBtn {
+  position: absolute;
+}
