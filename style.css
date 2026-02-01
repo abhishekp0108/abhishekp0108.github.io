@@ -44,7 +44,9 @@ nav a {
   position: absolute;
   width: 600px;
   height: 600px;
-  background: radial-gradient(rectangle, #ffc5e6, transparent);
+  background: radial-gradient(circle at top, #ffd1dc, #ffb6c1, #ff8fab);
+  color: #4a0033;
+  overflow-x: hidden;
   filter: blur(100px);
   z-index: -1;
 }
