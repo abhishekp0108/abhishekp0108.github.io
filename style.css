@@ -32,9 +32,11 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: center;   /* centers everything */
   text-align: center;
+  gap: 25px;
 }
+
 
 /* Glow */
 .glow {
