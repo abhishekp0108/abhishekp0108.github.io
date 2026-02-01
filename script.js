@@ -38,3 +38,14 @@ document.addEventListener("mousemove", (e) => {
     button.style.top = `${newY}px`;
   }
 });
+
+const runBtn = document.getElementById("runBtn");
+
+runBtn.addEventListener("mouseover", () => {
+  const x = Math.random() * (window.innerWidth - runBtn.offsetWidth);
+  const y = Math.random() * (window.innerHeight - runBtn.offsetHeight);
+
+  runBtn.style.position = "absolute";
+  runBtn.style.left = x + "px";
+  runBtn.style.top = y + "px";
+});
