@@ -41,7 +41,7 @@ nav a {
   position: absolute;
   width: 600px;
   height: 600px;
-  background: radial-gradient(circle, #4f46e5, transparent);
+  background: radial-gradient(rectangle, #ffc5e6, transparent);
   filter: blur(100px);
   z-index: -1;
 }
